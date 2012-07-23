@@ -1,0 +1,8 @@
+{
+    "name": "sr"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "signed-request": "*"
+  }
+}
