@@ -2,5 +2,7 @@ A signed-request middleware.
 
 Thanks to https://github.com/daaku/nodejs-signed-request for the decoder/validator
 
-checks req.param('sr') || req.header('X-sr')
-and exposes it to req.srObj (decoded, validated) & req.sr
+find signed request parameter value and expose
+the decoded/validated object to req.srObj (original value to req.sr).
+
+send 403 'unauthorized' if something goes wrong.
